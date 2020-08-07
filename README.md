@@ -13,7 +13,7 @@ One line installation: add the following line in your `Dockerfile`:
 
 ```Dockerfile
 # Default powerline10k theme, no plugins installed
-RUN sh -c "$(wget -O- https://raw.githubusercontent.com/deluan/zsh-in-docker/master/zsh-in-docker.sh)"
+RUN sh -c "$(wget -O- https://raw.githubusercontent.com/arjentix/zsh-in-docker/master/zsh-in-docker.sh)"
 ```
 
 #### Optional arguments:
@@ -31,19 +31,19 @@ RUN sh -c "$(wget -O- https://raw.githubusercontent.com/deluan/zsh-in-docker/mas
 
 ```Dockerfile
 # Uses "robbyrussell" theme (original Oh My Zsh theme), with no plugins
-RUN sh -c "$(wget -O- https://raw.githubusercontent.com/deluan/zsh-in-docker/master/zsh-in-docker.sh)" -- \
+RUN sh -c "$(wget -O- https://raw.githubusercontent.com/arjentix/zsh-in-docker/master/zsh-in-docker.sh)" -- \
     -t robbyrussell
 ```
 
 ```Dockerfile
 # Uses "git" and "ssh-agent" bundled plugins
-RUN sh -c "$(wget -O- https://raw.githubusercontent.com/deluan/zsh-in-docker/master/zsh-in-docker.sh)" -- \
+RUN sh -c "$(wget -O- https://raw.githubusercontent.com/arjentix/zsh-in-docker/master/zsh-in-docker.sh)" -- \
     -p git -p ssh-agent
 ```
 
 ```Dockerfile
 # Uses "agnoster" theme, uses some bundled plugins and install some more from github
-RUN sh -c "$(wget -O- https://raw.githubusercontent.com/deluan/zsh-in-docker/master/zsh-in-docker.sh)" -- \
+RUN sh -c "$(wget -O- https://raw.githubusercontent.com/arjentix/zsh-in-docker/master/zsh-in-docker.sh)" -- \
     -t agnoster \
     -p git \
     -p ssh-agent \
